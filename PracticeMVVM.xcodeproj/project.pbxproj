@@ -13,6 +13,15 @@
 		39DBBE362B875969005A8B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DBBE342B875969005A8B8A /* Main.storyboard */; };
 		39DBBE382B87596C005A8B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DBBE372B87596C005A8B8A /* Assets.xcassets */; };
 		39DBBE3B2B87596C005A8B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DBBE392B87596C005A8B8A /* LaunchScreen.storyboard */; };
+		39DBBE432B8759CC005A8B8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE422B8759CC005A8B8A /* LoginViewController.swift */; };
+		39DBBE452B875A1F005A8B8A /* inputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE442B875A1F005A8B8A /* inputTextField.swift */; };
+		39DBBE482B875BAC005A8B8A /* guideLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE472B875BAC005A8B8A /* guideLabel.swift */; };
+		39DBBE4C2B875C52005A8B8A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE4B2B875C52005A8B8A /* BaseViewController.swift */; };
+		39DBBE4F2B875D35005A8B8A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39DBBE4E2B875D35005A8B8A /* SnapKit */; };
+		39DBBE512B875D35005A8B8A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 39DBBE502B875D35005A8B8A /* SnapKit-Dynamic */; };
+		39DBBE532B8764E8005A8B8A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE522B8764E8005A8B8A /* LoginViewModel.swift */; };
+		39DBBE552B876906005A8B8A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE542B876906005A8B8A /* Observable.swift */; };
+		39DBBE572B87ABB4005A8B8A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DBBE562B87ABB4005A8B8A /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		39DBBE372B87596C005A8B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39DBBE3A2B87596C005A8B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39DBBE3C2B87596C005A8B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DBBE422B8759CC005A8B8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39DBBE442B875A1F005A8B8A /* inputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputTextField.swift; sourceTree = "<group>"; };
+		39DBBE472B875BAC005A8B8A /* guideLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guideLabel.swift; sourceTree = "<group>"; };
+		39DBBE4B2B875C52005A8B8A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		39DBBE522B8764E8005A8B8A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		39DBBE542B876906005A8B8A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		39DBBE562B87ABB4005A8B8A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DBBE4F2B875D35005A8B8A /* SnapKit in Frameworks */,
+				39DBBE512B875D35005A8B8A /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,10 @@
 		39DBBE2D2B875969005A8B8A /* PracticeMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				39DBBE542B876906005A8B8A /* Observable.swift */,
+				39DBBE4A2B875C36005A8B8A /* Login */,
+				39DBBE492B875C2B005A8B8A /* Base */,
+				39DBBE462B875B97005A8B8A /* CustomView */,
 				39DBBE2E2B875969005A8B8A /* AppDelegate.swift */,
 				39DBBE302B875969005A8B8A /* SceneDelegate.swift */,
 				39DBBE322B875969005A8B8A /* ViewController.swift */,
@@ -65,6 +87,33 @@
 				39DBBE3C2B87596C005A8B8A /* Info.plist */,
 			);
 			path = PracticeMVVM;
+			sourceTree = "<group>";
+		};
+		39DBBE462B875B97005A8B8A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				39DBBE472B875BAC005A8B8A /* guideLabel.swift */,
+				39DBBE442B875A1F005A8B8A /* inputTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		39DBBE492B875C2B005A8B8A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39DBBE4B2B875C52005A8B8A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		39DBBE4A2B875C36005A8B8A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				39DBBE562B87ABB4005A8B8A /* Login.swift */,
+				39DBBE422B8759CC005A8B8A /* LoginViewController.swift */,
+				39DBBE522B8764E8005A8B8A /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = PracticeMVVM;
+			packageProductDependencies = (
+				39DBBE4E2B875D35005A8B8A /* SnapKit */,
+				39DBBE502B875D35005A8B8A /* SnapKit-Dynamic */,
+			);
 			productName = PracticeMVVM;
 			productReference = 39DBBE2B2B875969005A8B8A /* PracticeMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 39DBBE222B875969005A8B8A;
+			packageReferences = (
+				39DBBE4D2B875D35005A8B8A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 39DBBE2C2B875969005A8B8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DBBE432B8759CC005A8B8A /* LoginViewController.swift in Sources */,
+				39DBBE572B87ABB4005A8B8A /* Login.swift in Sources */,
 				39DBBE332B875969005A8B8A /* ViewController.swift in Sources */,
 				39DBBE2F2B875969005A8B8A /* AppDelegate.swift in Sources */,
+				39DBBE482B875BAC005A8B8A /* guideLabel.swift in Sources */,
+				39DBBE552B876906005A8B8A /* Observable.swift in Sources */,
+				39DBBE532B8764E8005A8B8A /* LoginViewModel.swift in Sources */,
 				39DBBE312B875969005A8B8A /* SceneDelegate.swift in Sources */,
+				39DBBE4C2B875C52005A8B8A /* BaseViewController.swift in Sources */,
+				39DBBE452B875A1F005A8B8A /* inputTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +369,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mje0211.PracticeMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,9 +400,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mje0211.PracticeMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +432,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39DBBE4D2B875D35005A8B8A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39DBBE4E2B875D35005A8B8A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39DBBE4D2B875D35005A8B8A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		39DBBE502B875D35005A8B8A /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39DBBE4D2B875D35005A8B8A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39DBBE232B875969005A8B8A /* Project object */;
 }
